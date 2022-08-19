@@ -11,6 +11,7 @@ sempreQue x = 0
 
 {- 3. Escreva uma função chamada treco que receba três valores em ponto flutuantes com
 precisão dupla e retorne o resultado da soma dos dois primeiros multiplicado pelo terceiro. -}
+treco :: Double -> Double -> Double -> Double
 treco x y z = ((x + y) * z)
 
 {- 4. Escreva uma função chamada resto que devolva o resto de uma divisão entre dois números
@@ -86,32 +87,70 @@ main = do
   let a = 5
   let b = 10
 
-  putStr "Questao 1: "
+  putStr "Func. 1: entrada:2; resultado: "
   print (soma1 5)
 
-  putStr "Questao 2: "
+  putStrLn ""
+
+  putStr "Func. 2: entrada:5; resultado: "
   print (sempreQue 5)
 
-  putStr "Questao 3: "
-  print(treco 2 2 3)
+  putStrLn ""
 
-  putStr "Questao 4: "
+  putStr "Func. 3: entrada:2 2 3; resultado: "
+  print(treco 2.0 2.0 3.0)
+
+  putStrLn ""
+
+  putStr "Func. 4: entrada:7 4; resultado: "
   print(resto 7 4)
+  putStr "Func. 4: entrada:8 4; resultado: "
+  print(resto 8 4)
 
-  putStr "Questao 5: "
+  putStrLn ""
+
+  putStr "Func. 5: entrada 3.5 1.4 6.4 5.2; resultado: "
   print(precoMaior 3.5 1.4 6.4 5.2)
 
-  putStr "Questao 5.5: "
+  putStrLn ""
+
+  putStr "Func. 5.5: entrada 5 5; resultado: "
   print(par (5, 5))
 
-  putStr "Questao 6: "
-  print(impar 4 3)
+  putStrLn ""
 
-  putStr "Questao 7: "
+  putStr "Func. 6: entrada 4 3; resultado: "
+  print(impar 4 3)
+  putStr "Func. 6: entrada 5 3; resultado: "
+  print(impar 5 3)
+
+  putStrLn ""
+
+  putStr "Func. 7: entrada 3 6 5; resultado: "
   print(equacao 3 6 5)
 
-  putStr "Questao 8: "
-  print(diagnostico 85 1.75)
+  putStrLn ""
 
-  putStr "Questao 9: "
+  putStr "Func.8: entrada 45 1.75; resultado: "
+  print(diagnostico 45 1.75)
+  putStr "Func.8: entrada 55 1.75; resultado: "
+  print(diagnostico 55 1.75)
+  putStr "Func.8: entrada 60 1.75; resultado: "
+  print(diagnostico 60 1.75)
+  putStr "Func.8: entrada 80 1.75; resultado: "
+  print(diagnostico 80 1.75)
+  putStr "Func.8: entrada 95 1.75; resultado: "
+  print(diagnostico 95 1.75)
+  putStr "Func.8: entrada 110 1.75; resultado: "
+  print(diagnostico 110 1.75)
+  putStr "Func.8: entrada 130 1.75; resultado: "
+  print(diagnostico 130 1.75)
+
+  putStrLn ""
+
+  putStr "Func. 9: entrada 2000; resultado: "
+  print(bissexto 2000)
+  putStr "Func. 9: entrada 2022; resultado: "
   print(bissexto 2022)
+  putStr "Func. 9: entrada 2024; resultado: "
+  print(bissexto 2024)
